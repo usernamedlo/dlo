@@ -3,7 +3,7 @@ import { faYoutube, faSpotify, faGithub, faEthereum} from '@fortawesome/free-bra
 
 export const SocialLinks = () => {
     return (
-        <section className="flex flex-col items-center justify-center min-h-screen py-2">
+        <section className="flex flex-col items-center justify-center min-h-full">
             <div className='flex text-6xl'>
                 <a href="https://www.youtube.com/@0xdlo" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faYoutube} className="hover:text-red-500 mr-2"></FontAwesomeIcon>
@@ -18,7 +18,7 @@ export const SocialLinks = () => {
                 </a>
 
                 <a href="https://github.com/0xdlo" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faGithub} className="hover:text-[red]-500 mr-2"></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faGithub} className="hover:text-[#272D39] mr-2"></FontAwesomeIcon>
                 </a>
             </div>
         </section>

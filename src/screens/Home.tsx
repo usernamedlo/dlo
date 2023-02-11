@@ -1,7 +1,9 @@
 export const Home = () => {
     return (
         <main>
-            <h1>Home</h1>
+            <div className="h-screen flex items-center justify-center">
+                <p>Welcome to my website !</p>
+            </div>
         </main>
     )
 }
