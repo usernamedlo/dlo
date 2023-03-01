@@ -17,7 +17,6 @@ export default function CurrentTime() {
   const monthName = months[date.getMonth()];
   const hours = date.getHours() % 12 || 12;
   const minutes = date.getMinutes();
-  const seconds = date.getSeconds();
   const ampm = date.getHours() >= 12 ? "PM" : "AM";
 
   return (
@@ -26,7 +25,8 @@ export default function CurrentTime() {
         <div className="day-name">{dayName}</div>
         <div className="day-number">{dayNumber}</div>
         <div className="month">{monthName}</div>
-        <div className="time">{hours}:{minutes < 10 ? "0" : ""}{minutes}:{seconds < 10 ? "0" : ""}{seconds} {ampm}</div>
+        <div className="time">{hours}:{minutes < 10 ? "0" : ""}{minutes}</div>
+        <div className="ampm">{ampm}</div>
       </div>
     </span>
   );
